@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disco</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    body {
+      background-color: black;
+      color: whitesmoke;
+
+    }
+    .container {
+      width: 315px;
+      height: 315px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+    }
+    .unit {
+      width: 15px;
+      height: 15px;
+    }
+    .unit:nth-child(4n-1) {
+      background-color: rgb(49, 32, 47);
+      animation: hidden 200ms ease-out;
+      animation-iteration-count: 25;
+      animation-fill-mode: forwards;
+    }
+    .unit:nth-child(4n-3) {
+      background-color: rgb(49, 32, 47);
+      animation: hidden 200ms ease-out;
+      animation-iteration-count: 25;
+      animation-fill-mode: forwards;
+    }
+    .unit:nth-child(8n-6) {
+      background-color: white;
+      animation: hiddenTransition 250ms ease-out;
+      animation-iteration-count: infinite;
+      animation-delay: 5s;
+    }
+    .unit:nth-child(8n-2) {
+      background-color: yellow;
+      animation: hiddenTransition 300ms ease-out;
+      animation-iteration-count: infinite;
+      animation-delay: 5s;
+    }
+    .unit:nth-child(8n-4) {
+      background-color: red;
+      animation: hiddenTransition 400ms ease-out;
+      animation-iteration-count: infinite;
+      animation-delay: 5s;
+    }
+    .unit:nth-child(8n) {
+      background-color: blue;
+      animation: hiddenTransition 350ms ease-out;
+      animation-iteration-count: infinite;
+      animation-delay: 5s;
+    }
+    #countdown {
+      text-align: center;
+      font-size: 50px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    }
+    @keyframes hiddenTransition {
+      0% {
+        opacity: 1;
+        transform: none;
+      }
+      20% {
+        opacity: 1;
+      }
+      70% {
+        opacity: 0.5;
+      }
+      90% {
+        opacity: 0;
+        transform: translateY(20%);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(20%);
+      }
+    }
+    @keyframes hidden {
+      0% {
+        opacity: 1;
+        transform: none;
+      }
+      20% {
+        opacity: 1;
+      }
+      70% {
+        opacity: 0.5;
+      }
+      90% {
+        opacity: 0;
+        transform: translateY(20%);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(20%);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>DISCO LIGHT</h1>
+  <div class="container">
+    <div class="unit" id="unit1"></div>
+    <div class="unit" id="unit2"></div>
+    <div class="unit" id="unit3"></div>
+    <div class="unit" id="unit4"></div>
+    <div class="unit" id="unit5"></div>
+    <div class="unit" id="unit6"></div>
+    <div class="unit" id="unit7"></div>
+    <div class="unit" id="unit8"></div>
+    <div class="unit" id="unit9"></div>
+    <div class="unit" id="unit10"></div>
+    <div class="unit" id="unit11"></div>
+    <div class="unit" id="unit12"></div>
+    <div class="unit" id="unit13"></div>
+    <div class="unit" id="unit14"></div>
+    <div class="unit" id="unit15"></div>
+    <div class="unit" id="unit16"></div>
+    <div class="unit" id="unit17"></div>
+    <div class="unit" id="unit18"></div>
+    <div class="unit" id="unit19"></div>
+    <div class="unit" id="unit20"></div>
+    <div class="unit" id="unit21"></div>
+    <div class="unit" id="unit22"></div>
+    <div class="unit" id="unit23"></div>
+    <div class="unit" id="unit24"></div>
+    <div class="unit" id="unit25"></div>
+    <div class="unit" id="unit26"></div>
+    <div class="unit" id="unit27"></div>
+    <div class="unit" id="unit28"></div>
+    <div class="unit" id="unit29"></div>
+    <div class="unit" id="unit30"></div>
+    <div class="unit" id="unit31"></div>
+    <div class="unit" id="unit32"></div>
+    <div class="unit" id="unit33"></div>
+    <div class="unit" id="unit34"></div>
+    <div class="unit" id="unit35"></div>
+    <div class="unit" id="unit36"></div>
+    <div class="unit" id="unit37"></div>
+    <div class="unit" id="unit38"></div>
+    <div class="unit" id="unit39"></div>
+    <div class="unit" id="unit40"></div>
+    <div class="unit" id="unit41"></div>
+    <div class="unit" id="unit42"></div>
+    <div class="unit" id="unit43"></div>
+    <div class="unit" id="unit44"></div>
+    <div class="unit" id="unit45"></div>
+    <div class="unit" id="unit46"></div>
+    <div class="unit" id="unit47"></div>
+    <div class="unit" id="unit48"></div>
+    <div class="unit" id="unit49"></div>
+    <div class="unit" id="unit50"></div>
+    <div class="unit" id="unit51"></div>
+    <div class="unit" id="unit52"></div>
+    <div class="unit" id="unit53"></div>
+    <div class="unit" id="unit54"></div>
+    <div class="unit" id="unit55"></div>
+    <div class="unit" id="unit56"></div>
+    <div class="unit" id="unit57"></div>
+    <div class="unit" id="unit58"></div>
+    <div class="unit" id="unit59"></div>
+    <div class="unit" id="unit60"></div>
+    <div class="unit" id="unit61"></div>
+    <div class="unit" id="unit62"></div>
+    <div class="unit" id="unit63"></div>
+    <div class="unit" id="unit64"></div>
+    <div class="unit" id="unit65"></div>
+    <div class="unit" id="unit66"></div>
+    <div class="unit" id="unit67"></div>
+    <div class="unit" id="unit68"></div>
+    <div class="unit" id="unit69"></div>
+    <div class="unit" id="unit70"></div>
+    <div class="unit" id="unit71"></div>
+    <div class="unit" id="unit72"></div>
+    <div class="unit" id="unit73"></div>
+    <div class="unit" id="unit74"></div>
+    <div class="unit" id="unit75"></div>
+    <div class="unit" id="unit76"></div>
+    <div class="unit" id="unit77"></div>
+    <div class="unit" id="unit78"></div>
+    <div class="unit" id="unit79"></div>
+    <div class="unit" id="unit80"></div>
+    <div class="unit" id="unit81"></div>
+    <div class="unit" id="unit82"></div>
+    <div class="unit" id="unit83"></div>
+    <div class="unit" id="unit84"></div>
+    <div class="unit" id="unit85"></div>
+    <div class="unit" id="unit86"></div>
+    <div class="unit" id="unit87"></div>
+    <div class="unit" id="unit88"></div>
+    <div class="unit" id="unit89"></div>
+    <div class="unit" id="unit90"></div>
+    <div class="unit" id="unit91"></div>
+    <div class="unit" id="unit92"></div>
+    <div class="unit" id="unit93"></div>
+    <div class="unit" id="unit94"></div>
+    <div class="unit" id="unit95"></div>
+    <div class="unit" id="unit96"></div>
+    <div class="unit" id="unit97"></div>
+    <div class="unit" id="unit98"></div>
+    <div class="unit" id="unit99"></div>
+    <div class="unit" id="unit100"></div>
+    <div class="unit" id="unit101"></div>
+    <div class="unit" id="unit102"></div>
+    <div class="unit" id="unit103"></div>
+    <div class="unit" id="unit104"></div>
+    <div class="unit" id="unit105"></div>
+    <div class="unit" id="unit106"></div>
+    <div class="unit" id="unit107"></div>
+    <div class="unit" id="unit108"></div>
+    <div class="unit" id="unit109"></div>
+    <div class="unit" id="unit110"></div>
+    <div class="unit" id="unit111"></div>
+    <div class="unit" id="unit112"></div>
+    <div class="unit" id="unit113"></div>
+    <div class="unit" id="unit114"></div>
+    <div class="unit" id="unit115"></div>
+    <div class="unit" id="unit116"></div>
+    <div class="unit" id="unit117"></div>
+    <div class="unit" id="unit118"></div>
+    <div class="unit" id="unit119"></div>
+    <div class="unit" id="unit120"></div>
+    <div class="unit" id="unit121"></div>
+    <div class="unit" id="unit122"></div>
+    <div class="unit" id="unit123"></div>
+    <div class="unit" id="unit124"></div>
+    <div class="unit" id="unit125"></div>
+    <div class="unit" id="unit126"></div>
+    <div class="unit" id="unit127"></div>
+    <div class="unit" id="unit128"></div>
+    <div class="unit" id="unit129"></div>
+    <div class="unit" id="unit130"></div>
+    <div class="unit" id="unit131"></div>
+    <div class="unit" id="unit132"></div>
+    <div class="unit" id="unit133"></div>
+    <div class="unit" id="unit134"></div>
+    <div class="unit" id="unit135"></div>
+    <div class="unit" id="unit136"></div>
+    <div class="unit" id="unit137"></div>
+    <div class="unit" id="unit138"></div>
+    <div class="unit" id="unit139"></div>
+    <div class="unit" id="unit140"></div>
+    <div class="unit" id="unit141"></div>
+    <div class="unit" id="unit142"></div>
+    <div class="unit" id="unit143"></div>
+    <div class="unit" id="unit144"></div>
+    <div class="unit" id="unit145"></div>
+    <div class="unit" id="unit146"></div>
+    <div class="unit" id="unit147"></div>
+    <div class="unit" id="unit148"></div>
+    <div class="unit" id="unit149"></div>
+    <div class="unit" id="unit150"></div>
+    <div class="unit" id="unit151"></div>
+    <div class="unit" id="unit152"></div>
+    <div class="unit" id="unit153"></div>
+    <div class="unit" id="unit154"></div>
+    <div class="unit" id="unit155"></div>
+    <div class="unit" id="unit156"></div>
+    <div class="unit" id="unit157"></div>
+    <div class="unit" id="unit158"></div>
+    <div class="unit" id="unit159"></div>
+    <div class="unit" id="unit160"></div>
+    <div class="unit" id="unit161"></div>
+    <div class="unit" id="unit162"></div>
+    <div class="unit" id="unit163"></div>
+    <div class="unit" id="unit164"></div>
+    <div class="unit" id="unit165"></div>
+    <div class="unit" id="unit166"></div>
+    <div class="unit" id="unit167"></div>
+    <div class="unit" id="unit168"></div>
+    <div class="unit" id="unit169"></div>
+    <div class="unit" id="unit170"></div>
+    <div class="unit" id="unit171"></div>
+    <div class="unit" id="unit172"></div>
+    <div class="unit" id="unit173"></div>
+    <div class="unit" id="unit174"></div>
+    <div class="unit" id="unit175"></div>
+    <div class="unit" id="unit176"></div>
+    <div class="unit" id="unit177"></div>
+    <div class="unit" id="unit178"></div>
+    <div class="unit" id="unit179"></div>
+    <div class="unit" id="unit180"></div>
+    <div class="unit" id="unit181"></div>
+    <div class="unit" id="unit182"></div>
+    <div class="unit" id="unit183"></div>
+    <div class="unit" id="unit184"></div>
+    <div class="unit" id="unit185"></div>
+    <div class="unit" id="unit186"></div>
+    <div class="unit" id="unit187"></div>
+    <div class="unit" id="unit188"></div>
+    <div class="unit" id="unit189"></div>
+    <div class="unit" id="unit190"></div>
+    <div class="unit" id="unit191"></div>
+    <div class="unit" id="unit192"></div>
+    <div class="unit" id="unit193"></div>
+    <div class="unit" id="unit194"></div>
+    <div class="unit" id="unit195"></div>
+    <div class="unit" id="unit196"></div>
+    <div class="unit" id="unit197"></div>
+    <div class="unit" id="unit198"></div>
+    <div class="unit" id="unit199"></div>
+    <div class="unit" id="unit200"></div>
+    <div class="unit" id="unit201"></div>
+    <div class="unit" id="unit202"></div>
+    <div class="unit" id="unit203"></div>
+    <div class="unit" id="unit204"></div>
+    <div class="unit" id="unit205"></div>
+    <div class="unit" id="unit206"></div>
+    <div class="unit" id="unit207"></div>
+    <div class="unit" id="unit208"></div>
+    <div class="unit" id="unit209"></div>
+    <div class="unit" id="unit210"></div>
+    <div class="unit" id="unit211"></div>
+    <div class="unit" id="unit212"></div>
+    <div class="unit" id="unit213"></div>
+    <div class="unit" id="unit214"></div>
+    <div class="unit" id="unit215"></div>
+    <div class="unit" id="unit216"></div>
+    <div class="unit" id="unit217"></div>
+    <div class="unit" id="unit218"></div>
+    <div class="unit" id="unit219"></div>
+    <div class="unit" id="unit220"></div>
+    <div class="unit" id="unit221"></div>
+    <div class="unit" id="unit222"></div>
+    <div class="unit" id="unit223"></div>
+    <div class="unit" id="unit224"></div>
+    <div class="unit" id="unit225"></div>
+    <div class="unit" id="unit226"></div>
+    <div class="unit" id="unit227"></div>
+    <div class="unit" id="unit228"></div>
+    <div class="unit" id="unit229"></div>
+    <div class="unit" id="unit230"></div>
+    <div class="unit" id="unit231"></div>
+    <div class="unit" id="unit232"></div>
+    <div class="unit" id="unit233"></div>
+    <div class="unit" id="unit234"></div>
+    <div class="unit" id="unit235"></div>
+    <div class="unit" id="unit236"></div>
+    <div class="unit" id="unit237"></div>
+    <div class="unit" id="unit238"></div>
+    <div class="unit" id="unit239"></div>
+    <div class="unit" id="unit240"></div>
+    <div class="unit" id="unit241"></div>
+    <div class="unit" id="unit242"></div>
+    <div class="unit" id="unit243"></div>
+    <div class="unit" id="unit244"></div>
+    <div class="unit" id="unit245"></div>
+    <div class="unit" id="unit246"></div>
+    <div class="unit" id="unit247"></div>
+    <div class="unit" id="unit248"></div>
+    <div class="unit" id="unit249"></div>
+    <div class="unit" id="unit250"></div>
+    <div class="unit" id="unit251"></div>
+    <div class="unit" id="unit252"></div>
+    <div class="unit" id="unit253"></div>
+    <div class="unit" id="unit254"></div>
+    <div class="unit" id="unit255"></div>
+    <div class="unit" id="unit256"></div>
+    <div class="unit" id="unit257"></div>
+    <div class="unit" id="unit258"></div>
+    <div class="unit" id="unit259"></div>
+    <div class="unit" id="unit260"></div>
+    <div class="unit" id="unit261"></div>
+    <div class="unit" id="unit262"></div>
+    <div class="unit" id="unit263"></div>
+    <div class="unit" id="unit264"></div>
+    <div class="unit" id="unit265"></div>
+    <div class="unit" id="unit266"></div>
+    <div class="unit" id="unit267"></div>
+    <div class="unit" id="unit268"></div>
+    <div class="unit" id="unit269"></div>
+    <div class="unit" id="unit270"></div>
+    <div class="unit" id="unit271"></div>
+    <div class="unit" id="unit272"></div>
+    <div class="unit" id="unit273"></div>
+    <div class="unit" id="unit274"></div>
+    <div class="unit" id="unit275"></div>
+    <div class="unit" id="unit276"></div>
+    <div class="unit" id="unit277"></div>
+    <div class="unit" id="unit278"></div>
+    <div class="unit" id="unit279"></div>
+    <div class="unit" id="unit280"></div>
+    <div class="unit" id="unit281"></div>
+    <div class="unit" id="unit282"></div>
+    <div class="unit" id="unit283"></div>
+    <div class="unit" id="unit284"></div>
+    <div class="unit" id="unit285"></div>
+    <div class="unit" id="unit286"></div>
+    <div class="unit" id="unit287"></div>
+    <div class="unit" id="unit288"></div>
+    <div class="unit" id="unit289"></div>
+    <div class="unit" id="unit290"></div>
+    <div class="unit" id="unit291"></div>
+    <div class="unit" id="unit292"></div>
+    <div class="unit" id="unit293"></div>
+    <div class="unit" id="unit294"></div>
+    <div class="unit" id="unit295"></div>
+    <div class="unit" id="unit296"></div>
+    <div class="unit" id="unit297"></div>
+    <div class="unit" id="unit298"></div>
+    <div class="unit" id="unit299"></div>
+    <div class="unit" id="unit300"></div>
+    <div class="unit" id="unit301"></div>
+    <div class="unit" id="unit302"></div>
+    <div class="unit" id="unit303"></div>
+    <div class="unit" id="unit304"></div>
+    <div class="unit" id="unit305"></div>
+    <div class="unit" id="unit306"></div>
+    <div class="unit" id="unit307"></div>
+    <div class="unit" id="unit308"></div>
+    <div class="unit" id="unit309"></div>
+    <div class="unit" id="unit310"></div>
+    <div class="unit" id="unit311"></div>
+    <div class="unit" id="unit312"></div>
+    <div class="unit" id="unit313"></div>
+    <div class="unit" id="unit314"></div>
+    <div class="unit" id="unit315"></div>
+    <div class="unit" id="unit316"></div>
+    <div class="unit" id="unit317"></div>
+    <div class="unit" id="unit318"></div>
+    <div class="unit" id="unit319"></div>
+    <div class="unit" id="unit320"></div>
+    <div class="unit" id="unit321"></div>
+    <div class="unit" id="unit322"></div>
+    <div class="unit" id="unit323"></div>
+    <div class="unit" id="unit324"></div>
+    <div class="unit" id="unit325"></div>
+    <div class="unit" id="unit326"></div>
+    <div class="unit" id="unit327"></div>
+    <div class="unit" id="unit328"></div>
+    <div class="unit" id="unit329"></div>
+    <div class="unit" id="unit330"></div>
+    <div class="unit" id="unit331"></div>
+    <div class="unit" id="unit332"></div>
+    <div class="unit" id="unit333"></div>
+    <div class="unit" id="unit334"></div>
+    <div class="unit" id="unit335"></div>
+    <div class="unit" id="unit336"></div>
+    <div class="unit" id="unit337"></div>
+    <div class="unit" id="unit338"></div>
+    <div class="unit" id="unit339"></div>
+    <div class="unit" id="unit340"></div>
+    <div class="unit" id="unit341"></div>
+    <div class="unit" id="unit342"></div>
+    <div class="unit" id="unit343"></div>
+    <div class="unit" id="unit344"></div>
+    <div class="unit" id="unit345"></div>
+    <div class="unit" id="unit346"></div>
+    <div class="unit" id="unit347"></div>
+    <div class="unit" id="unit348"></div>
+    <div class="unit" id="unit349"></div>
+    <div class="unit" id="unit350"></div>
+    <div class="unit" id="unit351"></div>
+    <div class="unit" id="unit352"></div>
+    <div class="unit" id="unit353"></div>
+    <div class="unit" id="unit354"></div>
+    <div class="unit" id="unit355"></div>
+    <div class="unit" id="unit356"></div>
+    <div class="unit" id="unit357"></div>
+    <div class="unit" id="unit358"></div>
+    <div class="unit" id="unit359"></div>
+    <div class="unit" id="unit360"></div>
+    <div class="unit" id="unit361"></div>
+    <div class="unit" id="unit362"></div>
+    <div class="unit" id="unit363"></div>
+    <div class="unit" id="unit364"></div>
+    <div class="unit" id="unit365"></div>
+    <div class="unit" id="unit366"></div>
+    <div class="unit" id="unit367"></div>
+    <div class="unit" id="unit368"></div>
+    <div class="unit" id="unit369"></div>
+    <div class="unit" id="unit370"></div>
+    <div class="unit" id="unit371"></div>
+    <div class="unit" id="unit372"></div>
+    <div class="unit" id="unit373"></div>
+    <div class="unit" id="unit374"></div>
+    <div class="unit" id="unit375"></div>
+    <div class="unit" id="unit376"></div>
+    <div class="unit" id="unit377"></div>
+    <div class="unit" id="unit378"></div>
+    <div class="unit" id="unit379"></div>
+    <div class="unit" id="unit380"></div>
+    <div class="unit" id="unit381"></div>
+    <div class="unit" id="unit382"></div>
+    <div class="unit" id="unit383"></div>
+    <div class="unit" id="unit384"></div>
+    <div class="unit" id="unit385"></div>
+    <div class="unit" id="unit386"></div>
+    <div class="unit" id="unit387"></div>
+    <div class="unit" id="unit388"></div>
+    <div class="unit" id="unit389"></div>
+    <div class="unit" id="unit390"></div>
+    <div class="unit" id="unit391"></div>
+    <div class="unit" id="unit392"></div>
+    <div class="unit" id="unit393"></div>
+    <div class="unit" id="unit394"></div>
+    <div class="unit" id="unit395"></div>
+    <div class="unit" id="unit396"></div>
+    <div class="unit" id="unit397"></div>
+    <div class="unit" id="unit398"></div>
+    <div class="unit" id="unit399"></div>
+    <div class="unit" id="unit400"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+    <div class="unit"></div>
+
+  </div>
+  <h1>starts in</h1>
+  <div id="countdown">
+  </div>
+
+  <script>
+    const startingSec = 4;
+    let time = startingSec * 1;
+    const countdownEl = document.getElementById('countdown');
+
+    clear = setInterval(updateCountdown, 1000);
+    function updateCountdown() {
+
+      let seconds = time;
+      countdownEl.innerHTML = `${seconds}`;
+      time--;
+      if (time == -1) {
+        clearInterval(clear);
+      }
+    }
+//  function blink(){
+//   var r=document.getElementById ("unit1");
+//   if (r.style.display=="none") {
+//       r.style.display="block";
+//   }
+//   else {
+//     r.style.display="none";
+//   }
+// }
+// document.getElementById("btn").addEventListener ("click" , function () {
+//  clear= setInterval (blink , 50);
+// });
+// document.getElementById("btn2").addEventListener ("click" , function () {
+//   clearInterval (clear);
+// });
+  </script>
+</body>
+
+</html>
